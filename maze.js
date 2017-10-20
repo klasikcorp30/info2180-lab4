@@ -24,7 +24,7 @@ for ( var count = 0; count < document.getElementsByClassName("boundary").length 
 						}
 
 							let newElement = document.createElement("h2");
-							newElement.textContent = "You Lose";
+							newElement.textContent = "You Lose!";
 						    document.body.append(newElement);
 						    var status = document.createAttribute("id");
 							status.value = "status";
@@ -43,7 +43,7 @@ endOfMaze.addEventListener("mouseover", function end()
 			{
 
 				let newElement = document.createElement("h2");
-				newElement.textContent = "You Win";
+				newElement.textContent = "You Win!";
 				document.body.append(newElement);
 				var status = document.createAttribute("id");
 				status.value = "status";
@@ -67,7 +67,7 @@ resetGame.addEventListener("click", function reset()
 	 		i--;
 	    }
 
-	    	// When the user clicks the start icon, this code it removes the status either you win or you lose
+	    	// When the user clicks the start icon, this code, it removes the status either you win or you lose
 	   if (document.getElementsByTagName("div").innerHTML === `<h2 id = "status"> You Win </h2>` || `<h2 id = "status"> You Lose </h2>`)
 	   			{
 	   				var removeSatus = document.getElementById("status");
@@ -90,7 +90,7 @@ loseGame.addEventListener("mouseleave", function endGame()
 is used to print the "You
 Lose statement to the
 document" */				let newElement = document.createElement("h2");
-							newElement.textContent = "You Lose";
+							newElement.textContent = "You Lose!";
 						    document.body.append(newElement);
 						    var status = document.createAttribute("id");
 							status.value = "status";
